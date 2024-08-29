@@ -1,0 +1,789 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1061.6,10600.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Core.Activities.UiTree</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1072,10536" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="GetOverallTextpdf" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Results" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: CollaborateMD" sap:VirtualizedContainerService.HintSize="1009.6,10447.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="976,10207.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="913.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="regencybot" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/login" CvElementArea="380, 528, 252, 48" CvType="InputBox" DesignTimeRectangle="385, 532, 246, 42" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='' class='form-control ng-pristine ng-valid ng-touched' placeholder='Username' aaname=' Username ' /&gt;" Guid="574ba4d3-e169-48af-b8fc-b6b2206b8839" InformativeScreenshot="b1e9e5e0f5f226f00161c5ce09d4be15.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD' /&gt;" SearchSteps="Selector" Version="V3" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="913.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="Aima#2024" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/login" CvElementArea="345, 601, 244, 46" CvType="InputBox" DesignTimeRectangle="385, 604, 200, 43" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password-password-field' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password-password-field' tag='INPUT' type='password' class='form-control pwd-field ng-untouched ng-pristine ng-valid' placeholder='Password' aaname=' Password ' /&gt;" Guid="c44ea254-4bb6-45f4-8cde-f15e4f6e38bc" InformativeScreenshot="627c71b626d6aa117a6dbeaf41a4f8ff.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD' /&gt;" SearchSteps="Selector" Version="V3">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="345, 601, 244, 46" CvType="InputBox" DesignTimeRectangle="400, 610, 81, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl id='password-password-field-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password-password-field-label' tag='LABEL' type='' class='form-field-label' aaname=' Password ' check:innerText='Password' /&gt;" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="913.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/login" DesignTimeRectangle="347, 657, 284, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='login' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='BUTTON' type='submit' class='mb-2 btn btn-primary btn-block form-control' aaname=' Log In ' check:innerText='Log In' /&gt;" Guid="4bf28ace-52ba-4c11-8d74-6e89a2492daf" ImageBase64="" InformativeScreenshot="4d1215e0a02bc69e61ab42cf8fc26512.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD' /&gt;" SearchSteps="Selector" Version="V3">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="394, 710, 190, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='btn btn-link' aaname=' Forgot your Password? ' check:innerText='Forgot your Password?' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="913.6,130.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Claim'" sap:VirtualizedContainerService.HintSize="913.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/home" DesignTimeRectangle="60, 774, 58, 42" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Claim' parentid='claim-link' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Claim' parentid='claim-link' tag='SPAN' type='' class='nav-label ng-tns-c3601656974-2' check:innerText='Claim' /&gt;" Guid="17a198e3-2b9b-4d67-b162-181ed93e2bf2" ImageBase64="" InformativeScreenshot="f360a9ddb367cc3f56b4696f5482155e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Home - Welcome' /&gt;" SearchSteps="Selector" Version="V3" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="913.6,8696.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="880,8570.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="817.6,8484" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="RE.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,8191.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="721.6,8104.8" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="True">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,7888.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="NotFoundPdf" />
+                                      <Variable x:TypeArguments="x:String" Name="EnClaimID" />
+                                      <Variable x:TypeArguments="x:String" Name="ClaimFmDate" />
+                                      <Variable x:TypeArguments="x:String" Name="ClaimtoDate" />
+                                      <Variable x:TypeArguments="x:String" Default="C:\Users\IN11693\Downloads\" Name="StrFile" />
+                                      <Variable x:TypeArguments="si:FileInfo" Name="DownloadPdfFile" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ReadCellValueX Cell="[CurrentRow.ByField(&quot;Claim ID&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="625.6,200" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                                      <ueab:ReadCellValueX.SaveTo>
+                                        <OutArgument x:TypeArguments="x:String">[EnClaimID]</OutArgument>
+                                      </ueab:ReadCellValueX.SaveTo>
+                                    </ueab:ReadCellValueX>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search by'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="625.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="[EnClaimID]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="685, 346, 625, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='claim-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='claim-search' tag='INPUT' type='text' class='form-control search-field-width ng-pristine ng-valid ng-touched' placeholder='Search by name, DOB, account#, member ID, claim ID, or TCN Number' aaname=' Search by name, DOB, account#, member ID, claim ID, or TCN Number ' /&gt;" Guid="8ccb9cdd-1499-4927-9666-b39c631a28ab" ImageBase64="" InformativeScreenshot="d1645611eddd92e254ef5c8c4d6b201e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="625.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="1320, 347, 104, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' type='button' class='btn btn-primary section-btn ml-2' check:innerText='Search' /&gt;" Guid="94db90b7-bfe8-4405-a9c6-0d374b067a83" ImageBase64="" InformativeScreenshot="5deb189fc7865af472065de11b59e9a1.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="1356, 353, 57, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Search' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' tag='SPAN' type='' class='' check:innerText='Search' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click '1 - Original Claim'" sap:VirtualizedContainerService.HintSize="625.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229605116" DesignTimeRectangle="1202, 392, 15, 9" DesignTimeScaleFactor="1.125" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='claim-billType' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='claim-billType' tag='path' type='' class='' aaname='' /&gt;" Guid="84454728-3430-4f21-801c-8432cfe230b8" InformativeScreenshot="ff0817a7c6e23966c6f3d10608bf9a91.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="1187, 439, 47, 43" CvType="Button" DesignTimeRectangle="1188, 439, 47, 42" ElementType="Button" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" ContinueOnError="True" DisplayName="Click '7 -'" sap:VirtualizedContainerService.HintSize="625.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229608893" DesignTimeRectangle="985, 467, 234, 27" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='claim-billType-option-1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='claim-billType-option-1' tag='SPAN' type='' class='select-option-text' aaname=' 7 - Replacement of Prior Claim ' check:innerText='7 - Replacement of Prior Claim' /&gt;" Guid="bcdd22cb-969d-40d9-9683-c002dee58c67" InformativeScreenshot="3cb7e27d7671e76cb7dd99245bee2c66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="985, 509, 234, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' 8 - Void/Cancel Prior Claim ' parentid='undefined' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' 8 - Void/Cancel Prior Claim ' parentid='undefined' tag='SPAN' type='' class='select-option-text' check:innerText='8 - Void/Cancel Prior Claim' /&gt;" SearchSteps="FuzzySelector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="625.6,64.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Print'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229606622" DesignTimeRectangle="610, 251, 118, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl id='claim-print-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='claim-print-button' tag='BUTTON' type='button' class='dropdown-toggle btn btn-secondary' aaname=' Print ' check:innerText='Print' /&gt;" Guid="bfbf2ac7-d42b-44c0-8f5a-2a85e5bd8559" InformativeScreenshot="317003af90c44d0b3cdc08bc1f19eddb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="625.6,64.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'EOB'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229606622" DesignTimeRectangle="611, 530, 249, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' EOB ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' EOB ' tag='BUTTON' type='button' class='dropdown-item ng-star-inserted' check:innerText='EOB' /&gt;" Guid="68a90b88-d5f6-4339-9c88-2ec924f7cf03" ImageBase64="" InformativeScreenshot="c205bb7a625540bdbded63fa6c71040d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="625.6,64.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Cancel'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229608893" DesignTimeRectangle="1037, 676, 71, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Cancel' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' tag='BUTTON' type='button' class='btn btn-secondary' check:innerText='Cancel' /&gt;" Guid="3263f021-0318-45bd-a284-58aa1fb4400b" ImageBase64="" InformativeScreenshot="4078622db276e148777b9357b308f5f5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:CommentOut>
+                                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="625.6,396" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[System.IO.Directory.GetFiles( StrFile,&quot;*pdf&quot;)]">
+                                      <ui:ForEach.Body>
+                                        <ActivityAction x:TypeArguments="x:String">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:String" Name="CurrentPdf" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,190.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="353.6,104" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[CurrentPdf]" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ForEach.Body>
+                                    </ui:ForEach>
+                                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'No applied'" sap:VirtualizedContainerService.HintSize="625.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" TextString="[NotFoundPdf]" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/231286602" DesignTimeRectangle="801, 569, 386, 43" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ngb-modal-window&amp;gt;div&amp;gt;div&amp;gt;cmd-modal-alert&amp;gt;cmd-modal&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='DIV' class='d-flex flex-column align-items-start message-content ng-star-inserted' /&gt;" Guid="78d17fc4-4d34-4bad-bed2-c2866f1ea894" ImageBase64="" InformativeScreenshot="868f207df2f2ee0544b07758f21236d6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <If Condition="[string.IsNullOrEmpty(NotFoundPdf) = true]" sap:VirtualizedContainerService.HintSize="625.6,5963.2" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,5752" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="si:FileInfo" Name="DownloadPdfFile" />
+                                            <Variable x:TypeArguments="x:String" Name="FileNamePdf" />
+                                            <Variable x:TypeArguments="x:String" Name="LoopCountMax" />
+                                            <Variable x:TypeArguments="x:String" Name="CountMaxText" />
+                                            <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="CountMaxAllText" />
+                                            <Variable x:TypeArguments="x:String" Name="LoopStart" />
+                                            <Variable x:TypeArguments="x:String" Name="GetPdfTextOverall" />
+                                            <Variable x:TypeArguments="x:String" Name="CNI_number" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[DownloadPdfFile]" sap:VirtualizedContainerService.HintSize="529.6,1194.4" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_2">
+                                            <ui:GetLastDownloadedFile.Body>
+                                              <ActivityAction>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,896" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Print'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" DesignTimeRectangle="676, 326, 131, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='claim-print-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='claim-print-button' tag='BUTTON' type='button' class='dropdown-toggle btn btn-secondary' aaname=' Print ' check:innerText='Print' /&gt;" Guid="0146c389-df35-4ad8-aee6-7779a1b43649" ImageBase64="" InformativeScreenshot="7e16bc0dc38c3274686641c5b4105d6a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'EOB'" sap:VirtualizedContainerService.HintSize="353.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" DesignTimeRectangle="677, 634, 277, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' EOB ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' EOB ' tag='BUTTON' type='button' class='dropdown-item ng-star-inserted' check:innerText='EOB' /&gt;" Guid="c1f31ceb-9f96-4c7f-b919-ca22e5dd9add" ImageBase64="" InformativeScreenshot="31a3c492d6d91d1afdde8bfd3c95b46f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="353.6,233.6" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645938" DesignTimeRectangle="800, 634, 18, 18" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl aria-labelledby='eob-selection-8-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='eob-selection-8-label' tag='DIV' type='' class='radio-outer-circle ng-star-inserted' aaname='' /&gt;" Guid="cefe9a19-8586-43f7-8f54-dff98f05e80b" ImageBase64="" InformativeScreenshot="caa901be18b85f1dd1876ace70a99505.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="782, 688, 374, 75" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ngb-modal-window&amp;gt;div&amp;gt;div&amp;gt;cmd-eob-selection-dialog&amp;gt;cmd-modal&amp;gt;div' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='modal-footer flex-shrink-0' tag='DIV' aaname='' check:innerText='PrintCancel' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                    <uix:NClick.VerifyOptions>
+                                                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                                                        <uix:VerifyExecutionOptions.Retry>
+                                                          <InArgument x:TypeArguments="x:Boolean" />
+                                                        </uix:VerifyExecutionOptions.Retry>
+                                                        <uix:VerifyExecutionOptions.Timeout>
+                                                          <InArgument x:TypeArguments="x:Double" />
+                                                        </uix:VerifyExecutionOptions.Timeout>
+                                                      </uix:VerifyExecutionOptions>
+                                                    </uix:NClick.VerifyOptions>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Print'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645938" DesignTimeRectangle="1002, 707, 56, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Print' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Print' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='Print' /&gt;" Guid="796ace5d-7ea7-4895-948d-1c0f3959697f" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="0" />
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:GetLastDownloadedFile.Body>
+                                          </ui:GetLastDownloadedFile>
+                                          <Assign sap:VirtualizedContainerService.HintSize="529.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[FileNamePdf]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[DownloadPdfFile.ToString]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Private: Read PDF Text" FileName="[FileNamePdf]" sap:VirtualizedContainerService.HintSize="529.6,123.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[GetPdfTextOverall]" />
+                                          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="ICN (.*)" DisplayName="Find Matching Patterns" sap:VirtualizedContainerService.HintSize="529.6,100" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[GetPdfTextOverall]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;ICN &quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(.*)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="ICN (.*)" RegexOption="IgnoreCase, Compiled" Result="[Results]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="529.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[CNI_number]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[Results(0).groups(1).value]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Claim Control'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="[CNI_number]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645450" DesignTimeRectangle="788, 810, 445, 33" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='primary-ctrl-no' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='primary-ctrl-no' tag='INPUT' type='' class='form-control ng-pristine ng-valid ng-touched' placeholder='Claim Control / Original Ref. #' aaname=' Claim Control / Original Ref. # ' /&gt;" Guid="8cd043aa-6659-461d-ade0-0f5581d4379c" ImageBase64="" InformativeScreenshot="f7f4d1e25ce0dafe579cbbef18eac16c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="790, 790, 183, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl id='primary-ctrl-no-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='primary-ctrl-no-label' tag='LABEL' type='' class='form-field-label form-field-filled' aaname=' Claim Control / Original Ref. # ' check:innerText='Claim Control / Original Ref. #' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Search by'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="[EnClaimID]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="685, 346, 625, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='claim-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='claim-search' tag='INPUT' type='text' class='form-control search-field-width ng-pristine ng-valid ng-touched' placeholder='Search by name, DOB, account#, member ID, claim ID, or TCN Number' aaname=' Search by name, DOB, account#, member ID, claim ID, or TCN Number ' /&gt;" Guid="8ccb9cdd-1499-4927-9666-b39c631a28ab" ImageBase64="" InformativeScreenshot="d1645611eddd92e254ef5c8c4d6b201e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="529.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="1189, 269, 94, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' type='button' class='btn btn-primary section-btn ml-2' check:innerText='Search' /&gt;" Guid="21802f37-8411-4949-8932-da5264f29def" ImageBase64="" InformativeScreenshot="c7a658d64ec548f08b59896b7118ce22.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="1222, 275, 51, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Search' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' tag='SPAN' type='' class='' check:innerText='Search' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Charges'" sap:VirtualizedContainerService.HintSize="529.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" DesignTimeRectangle="405, 370, 95, 41" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl class='tab-title' parentid='claim-tab-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='tab-title' parentid='claim-tab-2' tag='DIV' type='' aaname=' Charges ' check:innerText='Charges' /&gt;" Guid="a267919c-83a1-4af4-8bce-690d7294ed6f" ImageBase64="" InformativeScreenshot="7b45ade167fe5442ccf058c098fb5b77.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NGetText DisplayName="Get Text '5 Charges'" sap:VirtualizedContainerService.HintSize="529.6,197.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" TextString="[LoopCountMax]" Version="V3">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" CvTextArea="476, 809, 75, 20" CvType="AnyWordGroup" DesignTimeRectangle="478, 804, 74, 27" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ml-2' parentname='claimForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ml-2' parentname='claimForm' tag='SPAN' type='' /&gt;" Guid="1cdeb98e-8b89-48ed-83d0-718b4fecbd39" ImageBase64="" InformativeScreenshot="209a5ee4f5a779f7bfbe05381425486b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NGetText.Target>
+                                          </uix:NGetText>
+                                          <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="529.6,233.6" sap2010:WorkflowViewState.IdRef="SplitText_1" Result="[CountMaxText]" Results="[CountMaxAllText]" Separator="Space" SeparatorKey="Space" Source="[LoopCountMax]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="529.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:String">[LoopStart]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:String">[CountMaxText]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="529.6,1643.2" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Enumerable.Range(0, Convert.ToInt32(LoopStart))]">
+                                            <ui:ForEach.Body>
+                                              <ActivityAction x:TypeArguments="x:Int32">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1437.6" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:Int32" Name="FindRow" />
+                                                    <Variable x:TypeArguments="x:String" Name="AddOne" />
+                                                    <Variable x:TypeArguments="x:String" Name="FromDate" />
+                                                    <Variable x:TypeArguments="x:String" Name="RowId" />
+                                                    <Variable x:TypeArguments="x:String" Name="Todos" />
+                                                    <Variable x:TypeArguments="x:String" Default="t1-row-0" Name="RowtoDos" />
+                                                    <Variable x:TypeArguments="x:String" Name="ElementFirst" />
+                                                    <Variable x:TypeArguments="x:String" Name="SecElement" />
+                                                    <Variable x:TypeArguments="x:String" Name="ClaimFromDt" />
+                                                    <Variable x:TypeArguments="x:String" Name="ToElemetFirst" />
+                                                    <Variable x:TypeArguments="x:String" Name="ToElementSec" />
+                                                    <Variable x:TypeArguments="x:String" Name="ClaimDateTo" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[FindRow]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">[currentNumber]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign DisplayName="FirstID" sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[ElementFirst]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">["from-date-"]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign DisplayName="FirstID" sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[SecElement]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">["-date-field"]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[ClaimFromDt]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[ElementFirst.ToString + FindRow.ToString + SecElement.ToString]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="03/01/2024" Version="V3">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645938" DesignTimeRectangle="336, 647, 89, 23" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentname='claimForm' tag='INPUT' id='{0}' /&gt;&quot;, ClaimFromDt)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentname='claimForm' tag='INPUT' id='{0}' type='' class='form-control ng-untouched ng-pristine ng-valid' aaname='' /&gt;&quot;, ClaimFromDt)]" Guid="7b7d4365-b2ae-411c-b308-c924d6c6d191" ImageBase64="" InformativeScreenshot="5c0462c0ba5ae23e7ad22773e32cdb8f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="339, 620, 101, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='table-t2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='table-t2' tag='SPAN' type='' class='header-renderer' aaname=' From ' check:innerText='From' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[ToElemetFirst]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">["to-date-"]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[ToElementSec]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">["-date-field"]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[ClaimDateTo]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[ToElemetFirst.ToString + FindRow.ToString + ToElementSec.ToString]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into To_date" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Text="03/01/2024" Version="V3">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645938" DesignTimeRectangle="449, 647, 88, 23" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentname='claimForm' tag='INPUT' id='{0}' /&gt;&quot;, ClaimDateTo)]" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentname='claimForm' tag='INPUT' id='{0}' type='' class='form-control ng-untouched ng-pristine ng-valid' aaname='' /&gt;&quot;, ClaimDateTo)]" Guid="7ae5d2a5-2d72-4cae-b053-a8f399bc67b2" ImageBase64="" InformativeScreenshot="2f911b585a299bb1a774c0ebd1a9caf5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="452, 620, 101, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' To ' class='header-renderer' parentid='table-t2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' To ' class='header-renderer' parentid='table-t2' tag='SPAN' type='' check:innerText='To' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEach.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ForEach>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NO CHANGE'" sap:VirtualizedContainerService.HintSize="529.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" DesignTimeRectangle="1300, 607, 399, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='overall-charge-status' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='overall-charge-status' tag='BUTTON' type='button' class='dropdown-toggle select-button form-control no-change-tracking' aaname='NO CHANGE ' check:innerText='NO CHANGE' /&gt;" Guid="ff98cbe7-cbd3-4ab8-b399-3e856c17675a" ImageBase64="" InformativeScreenshot="20854d7a2b7e8c9307ae23e35bb768d6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="1311, 613, 347, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='overall-charge-status' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='overall-charge-status' tag='SPAN' type='' class='select-value' aaname='NO CHANGE ' check:innerText='NO CHANGE' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NO CHANGE'" sap:VirtualizedContainerService.HintSize="529.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/230001513" DesignTimeRectangle="1310, 738, 166, 29" DesignTimeScaleFactor="1.25" Guid="299d8875-2689-4909-bb36-b719cc71fb6a" ImageBase64="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" InformativeScreenshot="7b224c281985aef0f5985b722179aee4.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="1323, 660, 339, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='overall-charge-status-option-0' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='overall-charge-status-option-0' tag='SPAN' type='' class='select-option-text' aaname=' NO CHANGE ' check:innerText='NO CHANGE' /&gt;" SearchSteps="Selector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="529.6,120.8" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[FileNamePdf]" />
+                                          <ueab:WriteCellX AutoIncrementRow="True" Cell="[CurrentRow.ByField(&quot;Bot Status&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="529.6,200" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Completed&quot;]" />
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="529.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/229645362" CvElementArea="317, 312, 87, 43" CvTextArea="354, 327, 38, 16" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="320, 316, 82, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary mr-2 ng-star-inserted' aaname=' Save ' check:innerText='Save' /&gt;" Guid="22f6e676-bc93-4ccd-8a35-99752d04ce8b" InformativeScreenshot="a88aa0d4ad5c3a489c877a73cf4b158c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector, CV" Version="V3">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvElementArea="403, 368, 97, 43" CvTextArea="421, 382, 60, 17" CvTextArgument="Charges" CvType="Button" DesignTimeRectangle="405, 370, 95, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl class='tab-title' parentid='claim-tab-2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='tab-title' parentid='claim-tab-2' tag='DIV' type='' aaname=' Charges ' check:innerText='Charges' /&gt;" SearchSteps="Selector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="si:FileInfo" Name="DownloadFileName" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,64.8" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Pdf Iruku&quot;]">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:MessageBox>
+                                          <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;AU1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,64.8" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[NotFoundPdf]">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ueab:WriteCellX>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="353.6,64.8" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/231286602" DesignTimeRectangle="1140, 653, 47, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' OK ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' OK ' tag='BUTTON' type='button' class='btn btn-secondary ng-star-inserted' check:innerText='OK' /&gt;" Guid="543f0e9e-5d02-4c53-bb53-183d152f82fa" ImageBase64="" InformativeScreenshot="fabf6f47dcd0e80e4a98ffa291e28000.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NClick.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="353.6,64.8" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/231286602" DesignTimeRectangle="455, 326, 97, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentname='claimForm' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='claimForm' tag='BUTTON' type='button' class='btn btn-secondary mr-2' aaname=' Close ' check:innerText='Close' /&gt;" Guid="f7fc82da-12d6-44d6-8867-fc842c5d0e56" ImageBase64="" InformativeScreenshot="df7ac34b7b77e023b74cdc121232b446.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NClick.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close without Saving'" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims/231286602" DesignTimeRectangle="975, 672, 197, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' Close without Saving ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Close without Saving ' tag='BUTTON' type='button' class='btn btn-secondary ng-star-inserted' check:innerText='Close without Saving' /&gt;" Guid="68d02786-43e5-49fc-acfd-d04f49128271" ImageBase64="" InformativeScreenshot="f5c2740e601bd4124910bd1da4d99f47.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+                                            </uix:NClick.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GLUNJ BOTGLUTALITY'" sap:VirtualizedContainerService.HintSize="913.6,197.6" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="1876, 187, 18, 18" DesignTimeScaleFactor="1.125" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;cmd-root&amp;gt;cmd-app-shell&amp;gt;div&amp;gt;cmd-user-bar&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;fa-icon&amp;gt;svg' idx='2' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='svg-inline--fa fa-chevron-down' tag='svg' aaname='' /&gt;" Guid="fb8a0ecf-5727-47a3-945a-c731c95d79df" ImageBase64="" InformativeScreenshot="cb12f7759a21a20520198f9b7712a790.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1470, 168, 56, 57" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;cmd-root&amp;gt;cmd-app-shell&amp;gt;div&amp;gt;cmd-user-bar&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;cmd-image-view&amp;gt;fa-icon&amp;gt;svg&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                      <uix:Target DesignTimeRectangle="1340, 165, 116, 64" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname=' What&amp;apos;s New? ' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' What&amp;apos;s New? ' tag='BUTTON' type='' class='btn user-bar-icon-button ng-star-inserted' /&gt;" ImageBase64="" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="913.6,182.4" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d5fdc706-2e42-4a8d-9ab7-23f66bbb7de2" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://app.collaboratemd.com/claims" DesignTimeRectangle="1730, 357, 178, 38" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Log Out' class='dropdown-item' parentid='profileDropdown' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' class='dropdown-item' parentid='profileDropdown' tag='BUTTON' type='button' check:innerText='Log Out' /&gt;" Guid="e6279dea-46fc-4336-906f-44c91cd5cfdd" ImageBase64="" InformativeScreenshot="4e09a4177c2471b213725dd6d6bf3088.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CollaborateMD - Claim' /&gt;" SearchSteps="Selector" Version="V3" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="363d27071c7269f19529a64a7ddec50e.jpg" Selector="&lt;html app='chrome.exe' title='CollaborateMD' /&gt;" Title="CollaborateMD" Url="https://app.collaboratemd.com/login" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
