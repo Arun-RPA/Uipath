@@ -1,0 +1,270 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,602.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="545.6,1132" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Run" sap:VirtualizedContainerService.HintSize="483.2,1020" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="d1bca37d-4fb7-4bb1-9198-204037045777" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,728.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Run'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d1bca37d-4fb7-4bb1-9198-204037045777" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 472, 280" DesignTimeScaleFactor="1.25" FriendlyName="'Run'" Guid="1a0a5328-507d-43fa-9b89-946eb1867b20" InformativeScreenshot="02f435128089b6420be2867ee2b87ca2.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.FuzzySelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </uix:TargetAnchorable.FuzzySelectorArgument>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'mstsc'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d1bca37d-4fb7-4bb1-9198-204037045777" Text="mstsc" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CvElementArea="82, 129, 365, 31" CvType="InputBox" DesignTimeRectangle="85, 135, 337, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'mstsc'" FullSelectorArgument="&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="6465b5d7-cd2b-4864-81a5-8fec9f6d1cb4" InformativeScreenshot="f3adfa7137a1bf20c07ef1a8dc86aaad.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d1bca37d-4fb7-4bb1-9198-204037045777" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CvElementArea="132, 212, 100, 35" CvTextArea="170, 221, 23, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="133, 213, 100, 35" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='OK' check:text='unchecked' /&gt;" Guid="5608b637-a338-4522-a488-1fbecbc886de" InformativeScreenshot="51fd16a8db520602e6360703929bf201.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="7995f97d49ed541737603ad9e6ddfa8c.png" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;" Title="Run" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="740.8,1908" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="678.4,1796" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="643.2,1717.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="580.8,1605.6" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="545.6,1527.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Remote Desktop Connection" sap:VirtualizedContainerService.HintSize="483.2,1415.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="5ad07354-abea-4c59-b23c-113c26b80182" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1124" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="ui:UiElement" Name="Password" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Remote Desktop'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5ad07354-abea-4c59-b23c-113c26b80182" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 558, 319" DesignTimeScaleFactor="1" FriendlyName="'Remote Desktop'" Guid="72737ee9-0791-4ffd-aba4-351aa4fbe07e" InformativeScreenshot="2a968595d573436724d9972e02679c84.png" ScopeSelectorArgument="&lt;wnd app='mstsc.exe' cls='#32770' title='Remote Desktop Connection' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5ad07354-abea-4c59-b23c-113c26b80182" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CvElementArea="331, 272, 100, 28" CvTextArea="355, 279, 52, 13" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="331, 272, 100, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='Co&amp;amp;nnect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='Co&amp;amp;nnect' check:text='unchecked' /&gt;" Guid="3c397060-1ed0-491c-9e0a-7ef1d4be98be" InformativeScreenshot="78b7820614dc30896bc5e1ba2cb9abd5.png" ScopeSelectorArgument="&lt;wnd app='mstsc.exe' cls='#32770' title='Remote Desktop Connection' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Private: Type Into 'password'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" IsPassword="True" OutUiElement="[Password]" ScopeIdentifier="5ad07354-abea-4c59-b23c-113c26b80182" Text="Acc@2021!" Timeout="10" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CvElementArea="30, 216, 435, 42" CvType="InputBox" DesignTimeRectangle="31, 219, 432, 40" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'Password'" FullSelectorArgument="&lt;ctrl automationid='PasswordField_2' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PasswordField_2' role='editable text' /&gt;" Guid="add47e31-7ddb-4f92-8ded-53292c80f9f5" InformativeScreenshot="f4726c8e56826b851f8f0dacf9b359f2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArea="28, 183, 72, 17" CvTextArgument="CRMACC" CvType="Text" DesignTimeRectangle="31, 180, 432, 24" ElementType="Text" FriendlyName="'CRMACC'" FullSelectorArgument="&lt;ctrl automationid='StaticTextField_0' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='StaticTextField_0' role='text' check:text='CRMACC' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAbQAAAAcCAYAAAAJDEpxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMuSURBVHhe7dxRcepAAEZhLKABC/VQCWjAAg5wUAdVgAIMYAAHeMjtYfozm+0mN7yRnfPNZNokm7C8cGZD790MkiR1wKBJkrpg0CRJXTBokqQuGDRJUhcMmiSpCwZNktQFgyZJ6oJBkyR1oRm0+/0+nE6n4ePjY9hsNo9tu90O+/1+uF6vjzGcz7lsjD+fz4/zpZy/3W6/R9q4lnGfn5+/R8a4fu58LJl/fH9/P+6Xcbl/631Ikt7Xn6Dxgb/b7R4BOB6Pw+VyeWx88B8Oh2eUErScJwAEg2N1DBIKrplDSHjdqWAxn9xrKo5L50/0EjKOM+e8D64zaJK0LqOg8SFPDFjZ8PucBK3G9WwlxhGP+niJEDGOMVNB41yi1orjK/MnvkSvXrFJktZpVKRE6n+PBjEVtNZx9lkh5WcLqyRCRMxaQWPFxPUEiBi14rh0/qzE5uYiSVqfUXmIBLFYYipohImVT4lxRIR7t2LFaiqBmQoa903EEkfuWVo6/9YcJUnr9ixSokKolmgFjXsQCoJRSnyyMqof83GvxKoVtMyNx43lfvk6r8w/K0FJUj+eRUpsXg1aQsUjQUJB0OpHfhkHwlUHj2vyuq2gtVZk+Q4sXpk/4wyaJPXlGbT8UcarQSs3IsFKqca5xChxyrh6vxU09utHhLmOn3hl/tzLoElSX0bPDAlCvXqakqDF19fXKDAljidohKtckbGqK1+zDhqrPa7nGPfIlj8SKb8zY3/J/LlXHnFKkvowCloe47VWWbU6aCAmXD/3yBF8F0ZQsqoqv1Org9ZaCdZbXm/p/BPfck6SpHUbFSmBWfLvuFpBy+qrDBLqeGTVRdTqsXXQGDO1msoqjUBh6fw5xz2ZaxlTSdJ6jYv0I99N8YFPKPKIj98JTQLQChrq77bAfr0aYjVVj0MZNK5hTILVUgdv6fz5SdDYWv+jyNxrSpLez98i/WAFxYc6USAObKx6+ODP472poIFwlI/+GEcsSuyXIYoyaMyBa+dWW4SHMeVKa8n8wX15H5zLOK7h2nq+kqT31i6SJEkrY9AkSV0waJKkLhg0SVIXDJokqQsGTZLUgWH4B2liAHL09qHgAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Input Capture Window'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5ad07354-abea-4c59-b23c-113c26b80182" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1920, 1080" DesignTimeScaleFactor="1" FriendlyName="'Input Capture Window'" FullSelectorArgument="&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;" FuzzySelectorArgument="&lt;wnd cls='IHWindowClass' title='Input Capture Window' check:text='Input Capture Window' /&gt;" Guid="08c81148-56fe-4304-b9ab-c4b81cede27c" InformativeScreenshot="0a2bd8dc9b8a922692a4f1f37ef3237e.png" ScopeSelectorArgument="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='202.88.246.124:61255 - Remote Desktop Connection' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Input Capture Window'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5ad07354-abea-4c59-b23c-113c26b80182" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1920, 1080" DesignTimeScaleFactor="1" FriendlyName="'Input Capture Window'" FullSelectorArgument="&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;" FuzzySelectorArgument="&lt;wnd cls='IHWindowClass' title='Input Capture Window' check:text='Input Capture Window' /&gt;" Guid="bb7c0fec-7cf9-4773-bd75-4a08ca473d1f" InformativeScreenshot="91be8b8957f793f3a1f2cedfcfa8ae14.png" ScopeSelectorArgument="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='202.88.246.124:61255 - Remote Desktop Connection' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Windows\System32\mstsc.exe" IconBase64="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" InformativeScreenshot="71db4eb3ba302826c348a8f5b9dcc6f2.png" Selector="&lt;wnd app='mstsc.exe' cls='#32770' title='Remote Desktop Connection' /&gt;" Title="Remote Desktop Connection" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+              </Sequence>
+            </ui:CommentOut.Body>
+          </ui:CommentOut>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

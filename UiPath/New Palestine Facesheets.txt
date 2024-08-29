@@ -1,0 +1,200 @@
+08/13/2024 18:42:17 => [Debug] Debug started for file: Main
+08/13/2024 18:42:19 => [Info] Get Folder Access execution started
+08/13/2024 18:42:23 => [Debug] MOVE IN RECORD
+Woodland Terrace of New Palestine Jul 12, 2024 16:54:01 ET
+RESIDENT INFORMATION
+Resident Name Preferred Name Unit Unit / Occupant Move in Date Init. Move In Date Orig.MoveIn Date Resident #
+Aadland, Barbara AL 316-1 04/17/2023 04/17/2023 04/17/2023 WTONP3030
+8
+Previous address Previous Phone # Legal Mailing address
+2128 Meridian Springs Lane, Greenfield, IN, 46140 (765) 860-4892 Same as Previous Address
+Sex Birthdate Age Marital Status Religion Race Occupation(s) Primary Lang.
+F 09/28/1935 88 Unknown - Declined to Specify - Declined to
+Specify
+Moved in From Move in Location Birth Place Citizenship Maiden Name
+
+Medicare (HIC) # Medicaid # Social Security # Veterans Administration #
+269-34-2516
+Insurance Name Insurance Policy #:
+AetnaMedicareEagle 101248257500
+PAYER INFORMATION
+Primary Payer Private Pay - AL
+OTHER INFORMATION
+Most Recent Hospital Stay Allergies
+diazePAM, oxyCODONE, Sulfa Antibiotics
+Medicaid Recertification Date Veteran's Status
+No Service
+CARE PROVIDERS
+Provider Phone Address UPIN NPI
+Primary Physician Office:(317) 462-5252 300 E. Boyd Ave 1689194086
+(Primary) Fax:(317) 462-8010 Greenfield, IN
+Morrow, Andrew 46140
+Primary Physician Office:(317) 338-8507 2001 W. 86th St 1750357513
+Mustaklem, Marwan Other:(866) 604-2922 Indianapolis, IN
+Fax:(317) 338-2454 46260
+Dentist 101 N STATE ST 1881690139
+Kirkwood, Brian Greenfield, IN
+46140
+Nurse Practitioner 25802 State Rd 19 1982027785
+Snyder, Allison Arcadia, IN
+46030
+Ophthalmologist Office:(317) 477-3937 400 W. Green Meadows Dr Suite 108 1235138876
+Wilson, Douglas Fax:(317) 477-3939 Greenfield, IN
+46140
+PHARMACY
+Pharmacy Phone/Fax Address
+Guardian Pharmacy of Indiana (Primary) Phone: (317) 452-4669 6530 Corporate Drive
+Primary Contact: Johanna Readinger Fax: (317) 452-4744 Indianapolis, IN, 46278
+EXTERNAL COMMUNITIES
+Community Name Phone Community Type
+Erlewein Mortuary Phone: (317) 467-4918 Funeral Home
+Hancock Regional Phone: (317) 462-5544 Hospital
+CONTACTS
+Name Contact Type Relationship Address Phone/Email
+Allison, Susan Billing Responsible Party Daughter 380 Paymaster Dr Home:(765) 860-4892
+Durable Power of Attorney for Greenfield, IN, 46140 Email:susiea2@yahoo.com
+Finances
+Durable Power of Attorney for
+Healthcare
+Emergency Contact # 1
+Wagner, Philip Durable Power of Attorney for Son 14830 41st Ave. Home:(612) 816-9635
+Finances Plymouth, MN, 55446 Email:ppwtrin@gmail.com
+Durable Power of Attorney for
+Healthcare
+Emergency Contact # 2
+DIAGNOSIS INFORMATION
+06/13/2024 - IRON DEFICIENCY ANEMIA SECONDA... (D50.0) 06/13/2024 - PERIPHERAL VASCULAR DISEASE, U... (I73.9)
+06/13/2024 - CARDIAC MURMUR, UNSPECIFIED (R01.1) 04/05/2024 - UNSPECIFIED MACULAR DEGENERATI... (H35.30)
+01/19/2024 - VASCULAR DEMENTIA, UNSPECIFIED... (F01.50) 01/19/2024 - IMPACTED CERUMEN, LEFT EAR (H61.22)
+01/19/2024 - ESSENTIAL (PRIMARY) HYPERTENSI... (I10) 01/19/2024 - PERSONAL HISTORY OF PEPTIC ULC... (Z87.11)
+01/19/2024 - PRESENCE OF AORTOCORONARY BYPA... (Z95.1) 04/17/2023 - ACUTE POSTHEMORRHAGIC ANEMIA (D62)
+04/17/2023 - HYPERLIPIDEMIA, UNSPECIFIED (E78.5) 04/17/2023 - UNSPECIFIED DEMENTIA, MILD, WI... (F03.A0)
+Aadland, Barbara(WTONP30308) -- Continued on Page 2
+DIAGNOSIS INFORMATION
+04/17/2023 - METABOLIC ENCEPHALOPATHY (G93.41) 04/17/2023 - HYPERTENSIVE CHRONIC KIDNEY DI... (I12.9)
+04/17/2023 - ATHEROSCLEROTIC HEART DISEASE ... (I25.10) 04/17/2023 - MODERATE PERSISTENT ASTHMA, UN... (J45.40)
+04/17/2023 - GASTRO-ESOPHAGEAL REFLUX DISEA... (K21.9) 04/17/2023 - UNILATERAL PRIMARY OSTEOARTHRI... (M16.12)
+04/17/2023 - CHRONIC KIDNEY DISEASE, STAGE ... (N18.31) 04/17/2023 - PAIN, UNSPECIFIED (R52)
+04/17/2023 - AFTERCARE FOLLOWING JOINT REPL... (Z47.1) 04/17/2023 - PRESENCE OF CORONARY ANGIOPLAS... (Z95.5)
+04/17/2023 - PRESENCE OF LEFT ARTIFICIAL HI... (Z96.642)
+ADVANCE DIRECTIVE
+Advanced Directive: DNR
+MISCELLANEOUS INFORMATION
+Date of Discharge Time Length of Stay Discharged to (Mortician Name and Licence No.)
+452
+Signature Date Time
+
+Personal Effects Sent With Relationship Date Time
+MOVE IN RECORD
+Woodland Terrace of New Palestine Jul 12, 2024 16:54:01 ET
+RESIDENT INFORMATION
+Resident Name Preferred Name Unit Unit / Occupant Move in Date Init. Move In Date Orig.MoveIn Date Resident #
+Allen, Betty AL 211-1 01/20/2023 01/20/2023 01/20/2023 WTONP3029
+7
+Previous address Previous Phone # Legal Mailing address
+1020 Tree Top Lane, Greenwood, IN, 46142 (317) 514-9765 Same as Previous Address
+Sex Birthdate Age Marital Status Religion Race Occupation(s) Primary Lang.
+F 06/18/1931 93 Widowed White School bus driver English
+Moved in From Move in Location Birth Place Citizenship Maiden Name
+U.S.
+Medicare (HIC) # Medicaid # Social Security # Veterans Administration #
+8QE2AF6CP03 317-28-9438
+Insurance Name Insurance Policy #:
+BCBSofMichigan UGG921649088
+PAYER INFORMATION
+Primary Payer Private Pay - AL
+OTHER INFORMATION
+Most Recent Hospital Stay Allergies
+Cephalexin, Ciprofloxacin, Codeine, metroNIDAZOLE, traMADol, Benicar, Bentyl, Penicillins, Sulfa Antibiotics
+Medicaid Recertification Date Veteran's Status
+No Service
+CARE PROVIDERS
+Provider Phone Address UPIN NPI
+Primary Physician Office:(317) 497-5530 9001 Wesleyan Rd Suite 100 1326128281
+(Primary) Fax:(855) 422-5182 Indianapolis, IN
+Lopshire, John 46268
+Nurse Practitioner Office:(317) 941-7338 2485 Directors Row Ste D 1104551605
+Holder, Chelsea Indianapolis, IN
+46241
+Nurse Practitioner Office:(317) 497-5530 9001 Wesleyan Rd Suite 100 1265108161
+Pulliam, Brittany Fax:(855) 422-5182 Indianapolis, IN
+46268
+Medical Specialist Office:(317) 893-1900 5330 E Stop 11 Rd 1598937484
+Daly, Ryan
+Cardiologist
+PHARMACY
+Pharmacy Phone/Fax Address
+Guardian Pharmacy of Indiana (Primary) Phone: (317) 452-4669 6530 Corporate Drive
+Primary Contact: Johanna Readinger Fax: (317) 452-4744 Indianapolis, IN, 46278
+EXTERNAL COMMUNITIES
+Community Name Phone Community Type
+St. Francis Hospital Phone: (317) 528-5000 Hospital
+Wilson St. Pierre Phone: (317) 882-0771 Funeral Home
+CONTACTS
+Name Contact Type Relationship Address Phone/Email
+Allen, Richard Billing Responsible Party Son 3517 Heathcliff Ct Home:(317) 999-2534
+Durable Power of Attorney for Westfield, IN, 46074 Email:Rickallen1205@gmail.
+Finances com
+Durable Power of Attorney for
+Healthcare
+Emergency Contact # 2
+Allen, Timothy Durable Power of Attorney for Son 6732 W Suncloud Dr Home:(317) 902-1641
+Finances New Palestine, IN, 46163 Email:
+Durable Power of Attorney for tallen@centralinsuranceassoc
+Healthcare .com
+Emergency Contact # 1
+DIAGNOSIS INFORMATION
+05/01/2024 - HYPOTHYROIDISM, UNSPECIFIED (E03.9) 05/01/2024 - HYPOKALEMIA (E87.6)
+05/01/2024 - UNSPECIFIED DEMENTIA, UNSPECIF... (F03.90) 05/01/2024 - MAJOR DEPRESSIVE DISORDER, REC... (F33.41)
+05/01/2024 - ANXIETY DISORDER, UNSPECIFIED (F41.9) 05/01/2024 - CHRONIC DIASTOLIC (CONGESTIVE)... (I50.32)
+05/01/2024 - DISORDER OF ARTERIES AND ARTER... (I77.9) 05/01/2024 - ALLERGIC RHINITIS, UNSPECIFIED (J30.9)
+05/01/2024 - GASTRO-ESOPHAGEAL REFLUX DISEA... (K21.9) 05/01/2024 - IRRITABLE BOWEL SYNDROME WITHO... (K58.9)
+05/01/2024 - CONSTIPATION, UNSPECIFIED (K59.00) 05/01/2024 - GOUT, UNSPECIFIED (M10.9)
+05/01/2024 - CHRONIC KIDNEY DISEASE, STAGE ... (N18.30) 05/01/2024 - URINARY TRACT INFECTION, SITE ... (N39.0)
+05/01/2024 - OTHER SPECIFIED SYMPTOMS AND S... (R09.89) 05/01/2024 - ATAXIA, UNSPECIFIED (R27.0)
+05/01/2024 - PERSONAL HISTORY OF OTHER ENDO... (Z86.39) 05/01/2024 - PERSONAL HISTORY OF OTHER SPEC... (Z87.898)
+04/12/2023 - MAJOR DEPRESSIVE DISORDER, REC... (F33.9) 01/19/2023 - HB-SS DISEASE WITH CRISIS WITH... (D57.09)
+Allen, Betty(WTONP30297) -- Continued on Page 2
+DIAGNOSIS INFORMATION
+01/19/2023 - OTHER CHRONIC THYROIDITIS (E06.5) 01/19/2023 - VITAMIN D DEFICIENCY, UNSPECIF... (E55.9)
+01/19/2023 - VITAMIN DEFICIENCY, UNSPECIFIE... (E56.9) 01/19/2023 - HYPERLIPIDEMIA, UNSPECIFIED (E78.5)
+01/19/2023 - POSTPROCEDURAL HYPOTHYROIDISM (E89.0) 01/19/2023 - OTHER SPECIFIED DEPRESSIVE EPI... (F32.89)
+01/19/2023 - INSOMNIA, UNSPECIFIED (G47.00) 01/19/2023 - ESSENTIAL (PRIMARY) HYPERTENSI... (I10)
+01/19/2023 - OTHER SECONDARY HYPERTENSION (I15.8) 01/19/2023 - ACUTE SYSTOLIC (CONGESTIVE) HE... (I50.21)
+01/19/2023 - CHRONIC SYSTOLIC (CONGESTIVE) ... (I50.22) 01/19/2023 - OCCLUSION AND STENOSIS OF UNSP... (I65.29)
+01/19/2023 - OTHER IRRITABLE BOWEL SYNDROME (K58.8) 01/19/2023 - UNSPECIFIED HEMORRHOIDS (K64.9)
+01/19/2023 - IDIOPATHIC GOUT, UNSPECIFIED S... (M10.00) 01/19/2023 - OTHER OSTEOPOROSIS WITHOUT CUR... (M81.8)
+01/19/2023 - CHRONIC KIDNEY DISEASE, UNSPEC... (N18.9) 01/19/2023 - NAUSEA (R11.0)
+01/19/2023 - UNSTEADINESS ON FEET (R26.81) 01/19/2023 - OTHER AMNESIA (R41.3)
+01/19/2023 - ATTENTION AND CONCENTRATION DE... (R41.840) 01/19/2023 - AGE-RELATED PHYSICAL DEBILITY (R54)
+ADVANCE DIRECTIVE
+
+MISCELLANEOUS INFORMATION
+Date of Discharge Time Length of Stay Discharged to (Mortician Name and Licence No.)
+539
+Signature Date Time
+
+Personal Effects Sent With Relationship Date Time
+MOVE IN RECORD
+Woodland Terrace of New Palestine Jul 12, 2024 16:54:01 ET
+RESIDENT INFORMATION
+Resident Name Preferred Name Unit Unit / Occupant Move in Date Init. Move In Date Orig.MoveIn Date Resident #
+Mrs. Anderson, Dana AL 322-1 09/23/2022 09/23/2022 09/23/2022 WTONP3028
+5
+Previous address Previous Phone # Legal Mailing address
+(740) 707-5427 Same as Previous Address
+Sex Birthdate Age Marital Status Religion Race Occupation(s) Primary Lang.
+F 10/03/1937 86 Widowed Unknown White or Caucasian Educator English
+Moved in From Move in Location Birth Place Citizenship Maiden Name
+U.S.
+Medicare (HIC) # Medicaid # Social Security # Veterans Administration #
+3A11EC7CF04 276-34-7843
+Insurance Name Insurance Policy #:
+Medicare
+PAYER INFORMATION
+Primary Payer Private Pay - AL
+OTHER INFORMATION
+Most Recent Hospital Stay Allergies
+Codeine, glipiZIDE, Pioglitazone, Pitavastatin, raNITIdine
+Medicaid R...
+08/13/2024 18:42:23 => [Info] Get Folder Access execution ended in: 00:00:04
