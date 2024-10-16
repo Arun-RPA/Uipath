@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Workbench{% endblock %}
+
+{% block content %}
+<h2>Workbench</h2>
+
+<form method="GET" action="{{ url_for('workbench') }}">
+    <label for="date_filter">Select Date:</label>
+    <input type="date" name="date_filter" id="date_filter">
+    <button type="submit">Filter</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Attachment</th>
+            <th>Status</th>
+            <th>Total Pages</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pdf in pdf_data %}
+        <tr>
+            <td>{{ pdf[0] }}</td>
+            <td>{{ pdf[1] }}</td>
+            <td>{{ pdf[2] }}</td>
+            <td><a href="{{ url_for('view_pdf', filename=pdf[3]) }}">{{ pdf[3] }}</a></td>
+            <td>{{ pdf[4] }}</td>
+            <td>{{ pdf[5] }}</td>
+            <td>
+                <form method="POST" action="{{ url_for('update_status') }}">
+                    <input type="hidden" name="pdf_id" value="{{ pdf[0] }}">
+                    <select name="status">
+                        <option value="Completed">Completed</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Exception">Exception</option>
+                    </select>
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

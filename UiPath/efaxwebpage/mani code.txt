@@ -1,0 +1,139 @@
+import os
+from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory, flash
+import pyodbc
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+
+# Path to PDF directory
+PDF_DIRECTORY = r'G:\My Drive\DigiDoc\eFax Attachments'
+
+# SQL Server connection string
+connection_string = (
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'SERVER=10.115.245.191;'
+    'DATABASE=PythonDB;'
+    'UID=sa;'
+    'PWD=heikinashi'
+)
+
+# Ensure PDF storage folder exists
+PDF_FOLDER = os.path.join(os.getcwd(), 'pdf_files')
+if not os.path.exists(PDF_FOLDER):
+    os.makedirs(PDF_FOLDER)
+
+# Database connection
+def get_db_connection():
+    return pyodbc.connect(connection_string)
+
+# Login route
+@app.route('/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        # Dummy login credentials
+        if username == 'admin' and password == 'password':
+            session['username'] = username
+            return redirect(url_for('dashboard'))
+        else:
+            flash('Invalid Credentials')
+            return redirect(url_for('login'))
+    return render_template('login.html')
+
+@app.route('/dashboard')
+def dashboard():
+    conn = None
+    cursor = None
+    try:
+        conn = get_db_connection()  # Establish a new connection
+        cursor = conn.cursor()
+
+        # Get the total number of PDFs
+        cursor.execute("SELECT COUNT(*) FROM dbo.EmailAutomation")
+        total_pdfs = cursor.fetchone()[0]
+
+        # Get the count of completed files
+        cursor.execute("SELECT COUNT(*) FROM dbo.EmailAutomation WHERE Fax_Status = 'Completed'")
+        completed_files = cursor.fetchone()[0]
+
+        # Get the count of pending files
+        cursor.execute("SELECT COUNT(*) FROM dbo.EmailAutomation WHERE Fax_Status = 'Pending'")
+        pending_files = cursor.fetchone()[0]
+
+        # Get the count of exception files
+        cursor.execute("SELECT COUNT(*) FROM dbo.EmailAutomation WHERE Fax_Status = 'Exception'")
+        exception_files = cursor.fetchone()[0]
+
+        # Get PDF data for display
+        cursor.execute("SELECT * FROM dbo.EmailAutomation")
+        pdf_data = cursor.fetchall()
+
+        return render_template('dashboard.html', total_pdfs=total_pdfs,
+                               completed_files=completed_files,
+                               pending_files=pending_files,
+                               exception_files=exception_files,
+                               pdf_data=pdf_data)
+    except Exception as e:
+        flash(f"An error occurred while loading the dashboard: {str(e)}")
+        return redirect(url_for('login'))  # Redirect to login if there’s an error
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+# Route to serve PDF files
+@app.route('/view_pdf/<filename>', methods=['GET'])
+def view_pdf(filename):
+    file_path = os.path.join(PDF_FOLDER, filename)  # Construct the file path
+    if os.path.isfile(file_path):  # Check if the file exists
+        return send_from_directory(PDF_FOLDER, filename)
+    else:
+        flash(f"File {filename} not found")  # Flash an error message if file not found
+        return redirect(url_for('dashboard'))  # Redirect to dashboard if file not found
+
+@app.route('/update_status', methods=['POST'])
+def update_status():
+    conn = None
+    cursor = None
+
+    try:
+        # Get values from the form
+        pdf_id = int(request.form['pdf_id'])
+        status = request.form['status']
+        delete = request.form.get('delete')
+
+        # Establish a new connection
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        if delete == 'yes':
+            cursor.execute('DELETE FROM dbo.EmailAutomation WHERE ID = ?', (pdf_id,))
+            flash('PDF deleted successfully.')
+        else:
+            cursor.execute('UPDATE dbo.EmailAutomation SET Fax_Status = ? WHERE ID = ?', (status, pdf_id))
+            flash('Status updated successfully.')
+
+        conn.commit()
+
+    except Exception as e:
+        flash(f"An error occurred: {str(e)}")
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
+    return redirect(url_for('dashboard'))
+
+# Logout route
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    flash('You have been logged out.')
+    return redirect(url_for('login'))
+
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<p>Total PDFs: {{ total_pdfs }}</p>
+<p>Completed: {{ completed_files }}</p>
+<p>Pending: {{ pending_files }}</p>
+<p>Exceptions: {{ exception_files }}</p>
+
+<form method="POST" action="{{ url_for('dashboard') }}">
+    <input type="date" name="date_filter" value="{{ selected_date }}">
+    <button type="submit">Filter</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Attachment</th>
+            <th>Status</th>
+            <th>Total Pages</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pdf in pdf_data %}
+        <tr>
+            <td>{{ pdf[1] }}</td>
+            <td>{{ pdf[2] }}</td>
+            <td><a href="{{ url_for('view_pdf', filename=pdf[3]) }}">{{ pdf[3] }}</a></td>
+            <td>{{ pdf[4] }}</td>
+            <td>{{ pdf[5] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
